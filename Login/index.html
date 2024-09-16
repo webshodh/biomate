@@ -11,21 +11,28 @@
       <div class="signup">
         <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
         <div class="form-holder">
-          <input type="text" class="input" placeholder="Name" />
-          <input type="email" class="input" placeholder="Email" />
-          <input type="password" class="input" placeholder="Password" />
+          <form id="signupForm" method="POST" action="./signup.php">
+          <input type="text" name="name" class="input" placeholder="Name" />
+          <input type="tel" name="mobile" class="input" placeholder="Mobile">
+          <input type="email" name="email" class="input" placeholder="Email" />
+          <input type="password" name="password" class="input" placeholder="Password" />
+          
         </div>
         <button class="submit-btn">Sign up</button>
+      </form>
+       
       </div>
       <div class="login slide-up">
         <div class="center">
           <h2 class="form-title" id="login"><span>or</span>Log in</h2>
           <div class="form-holder">
-            <input type="email" class="input" placeholder="Email" />
-            <input type="password" class="input" placeholder="Password" />
+            <form id="loginForm" method="POST" action="./login.php">
+            <input type="tel" name="mobile" class="input" placeholder="mobile" />
+            <input type="password" name="password" class="input" placeholder="Password" />
           </div>
-          <button class="submit-btn">Log in</button>
+          <button class="submit-btn" type="submit">Log in</button>
         </div>
+      </form>
       </div>
     </div>
   </body>
