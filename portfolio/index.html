@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="loading-screen">
+      <!-- Spinner while loading -->
+      <div class="spinner">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <!-- Image with transition effect -->
+      <div class="image-background">
+        <div class="overlay">
+          <!-- Text Content -->
+          <h2 class="card-title">John Doe, 25</h2>
+          <p class="card-text">
+            <img src="../assets/placeholder.png" width="20px" height="20px" alt="location" style="margin-right: 5px;">
+            New York, USA
+          </p>
+          <p class="card-text">
+            <img src="../assets/office.png" width="20px" height="20px" alt="profession" style="margin-right: 5px;">
+            Software Engineer at Google
+          </p>
+          <p class="social-icons">
+            <img src="../assets/instagram.png" width="40px" height="40px" alt="Instagram">
+            <img src="../assets/facebook.png" width="40px" height="40px" alt="Facebook">
+            <img src="../assets/linkedin.png" width="40px" height="40px" alt="LinkedIn" onclick="window.open('https://www.linkedin.com', '_blank')">
+          </p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-button next-button" onclick="handleNext()">
+          >
+        </div>
+        <div class="nav-button prev-button" onclick="handlePrev()">
+          <
+        </div>
+
+        <!-- Dots for navigation -->
+        <div class="dots">
+          <div class="dot" onclick="goToSlide(0)"></div>
+          <div class="dot" onclick="goToSlide(1)"></div>
+          <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Personal Details Section -->
+    <section class="section">
+      <div class="section-title">
+        <div class="icon"><i class="fas fa-user-circle"></i></div>
+        <h3>Personal Details</h3>
+      </div>
+      <div class="details">
+        <div class="detail-card">
+          <p class="label">Gender</p>
+          <p class="value">: Male</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Blood Group</p>
+          <p class="value">: O+</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Complexion</p>
+          <p class="value">: Fair</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Height</p>
+          <p class="value">: 5'8"</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Weight</p>
+          <p class="value">: 75kg</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Location</p>
+          <p class="value">: New York, USA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Religious Background Section -->
+    <section class="section">
+      <div class="section-title">
+        <div class="icon"><i class="fas fa-language"></i></div>
+        <h3>Religious Background</h3>
+      </div>
+      <div class="details">
+        <div class="detail-card">
+          <p class="label">Religion</p>
+          <p class="value">: Christian</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Cast</p>
+          <p class="value">: General</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Language</p>
+          <p class="value">: English</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Astro Details Section -->
+    <section class="section">
+      <div class="section-title">
+        <div class="icon"><i class="fas fa-star"></i></div>
+        <h3>Astro Details</h3>
+      </div>
+      <div class="details">
+        <div class="detail-card">
+          <p class="label">Date of Birth</p>
+          <p class="value">: 1990-01-01</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Place of Birth</p>
+          <p class="value">: New York, USA</p>
+        </div>
+        <div class="detail-card">
+          <p class="label">Rashi</p>
+          <p class="value">: Virgo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- More sections can go here similar to above -->
+
+  </div>
+
+  
+</body>
+<script src="script.js"></script>
+</html>
